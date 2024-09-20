@@ -18,10 +18,13 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<!-- <slot /> -->
-		 <header>
-			<div class="container">
+		<header>
+			<div class="container max-w-[9400px] mx-auto">
 				<div class="flex-menu">
-					<img src="https://store.akamai.steamstatic.com/public/shared/images/responsive/header_logo.png" alt="Logo Steam">
+					<img
+						src="https://store.akamai.steamstatic.com/public/shared/images/responsive/header_logo.png"
+						alt="Logo Steam"
+					/>
 					<menu>
 						<li><a href="#">Tienda</a></li>
 						<li><a href="#">Comunidad</a></li>
@@ -31,29 +34,71 @@ const { title } = Astro.props;
 				</div>
 				<div class="menu-right">
 					<a href="#" class="btn-download">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-							<path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-						  </svg>Instalar Steam
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="size-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+							></path>
+						</svg>Instalar Steam
 					</a>
 					<a href="3">Iniciar Sesión</a>
 					|
 					<a href="3">Idioma</a>
 				</div>
 			</div>
-		 </header>
-		 <div class="banner">
+		</header>
+		<div class="banner">
 			<!-- Contruir el bloque de la pagina de Steam -->
-		 </div>
+		</div>
 
-		 <div class="banner2 container">
-			<div class="left-menu">
+		<div class="left-menu"></div>
 
-			</div>
-		 </div>
+		<div class="banner2 container max-w-[9400px] mx-auto"></div>
 
-		 <div class="banner3">
+		<div class="banner3"></div>
+		<!-- Con group puede darle estilos a uhn hijo con slectores descendentes, en este caso, que cuando este encima la animacion se efectue -->
+		<div
+		
+			class="group items-center hover:cursor-pointer duration-300 transition-colors hover:bg-blue-600 rounded py-2 px-4 text-white inline-flex bg-blue-500"
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="size-4 mr-1 mt-[3px] group-hover:animate-spin"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+				></path>
+			</svg>
 
-		 </div>
+			Presioname!
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="size-4 mt-[3px] ml-1"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+			</svg>
+		</div>
 	</body>
 </html>
 <style>
@@ -63,20 +108,21 @@ const { title } = Astro.props;
 		box-sizing: border-box;
 	} */
 
-	 html, body{
+	html,
+	body {
 		padding: 0;
 		margin: 0;
-	 }
+	}
 
-	header{
+	header {
 		height: 80px;
 		background: #161d24;
 	}
 
-	.container{
+	/* .container {
 		max-width: 940px;
 		margin: 0 auto;
-	}
+	} */
 
 	.flex-menu {
 		display: flex;
@@ -90,7 +136,7 @@ const { title } = Astro.props;
 		text-transform: uppercase;
 	}
 
-	.flex-menu img{
+	.flex-menu img {
 		width: 160px;
 	}
 
@@ -100,13 +146,13 @@ const { title } = Astro.props;
 		display: inline-block;
 	}
 
-	.flex-menu a{
+	.flex-menu a {
 		text-decoration: none;
 		color: #f4e5e5;
 		font-weight: 600;
 	}
 
-	.flex-menu a:hover{
+	.flex-menu a:hover {
 		color: #ffffff;
 	}
 
@@ -118,13 +164,13 @@ const { title } = Astro.props;
 		font-family: sans-serif;
 	}
 
-	.menu-right a{
+	.menu-right a {
 		margin: 0 8px;
 		color: #f4e5e5;
 		text-decoration: none;
 	}
 
-	.btn-download{
+	.btn-download {
 		color: #ffffff;
 		background-color: #789806;
 		display: inline-block;
@@ -136,34 +182,37 @@ const { title } = Astro.props;
 		gap: 8px;
 	}
 
-	.btn-download:hover{
+	.btn-download:hover {
 		background-color: #8aab14;
 	}
 
-	.btn-download svg{
+	.btn-download svg {
 		width: 18px;
 	}
 
-	.banner{
+	.banner {
 		background: orange;
 		height: 360px;
 	}
 
-	.banner2{
+	.banner2 {
 		background-color: purple;
 		height: 240px;
 		position: relative;
 	}
 
-	.left-menu{
+	.left-menu {
+		float: left;
+		z-index: 1;
+		left: calc(((100% - 940px) / 2) - 180px);
 		background: pink;
 		width: 180px;
 		height: 360px;
-		position: absolute;
-		left: -180px;
+		position: sticky;
+		top: 0;
 	}
 
-	.banner3{
+	.banner3 {
 		height: 1200px;
 		background-color: turquoise;
 	}
