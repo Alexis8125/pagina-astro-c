@@ -16,31 +16,59 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="p-0 m-0">
+	<body class="p-0 m-0 box-border">
 		<!-- <slot /> -->
-		<header class="h-20 bg-[#161d24]" >
-			<div class="container max-w-[9400px] mx-auto">
-				<div class="flex items-center w-[60%] float-left h-20 text-[#f4e5e5] font-sans uppercase">
+		<header class="h-[104px] bg-[#161d24]">
+			<div class="container max-w-[1200px] mx-auto h-[100%]">
+				<div
+					class="m-0 justify-center flex items-center w-[70%] float-left h-[100%] text-[#f4e5e5] font-sans uppercase"
+				>
 					<img
 						src="https://store.akamai.steamstatic.com/public/shared/images/responsive/header_logo.png"
-						alt="Logo Steam" class="w-40"
+						alt="Logo Steam"
+						class="w-48 mr-8"
 					/>
 					<menu>
-						<li class="ml-[10px] list-none inline-block"><a href="#" class="no-underline text-[#f4e5e5] font-semibold hover:text-[#ffffff]">Tienda</a></li>
-						<li class="ml-[10px] list-none inline-block"><a href="#" class="no-underline text-[#f4e5e5] font-semibold hover:text-[#ffffff]">Comunidad</a></li>
-						<li class="ml-[10px] list-none inline-block"><a href="#" class="no-underline text-[#f4e5e5] font-semibold hover:text-[#ffffff]">Acerca de</a></li>
-						<li class="ml-[10px] list-none inline-block"><a href="#" class="no-underline text-[#f4e5e5] font-semibold hover:text-[#ffffff]">Soporte</a></li>
+						<li class="ml-[10px] list-none inline-block">
+							<a
+								href="#"
+								class="no-underline text-[#f4e5e5] font-semibold hover:text-[#ffffff] text-[0.9vmax]"
+								>Tienda</a>
+						</li>
+						<li class="ml-[10px] list-none inline-block">
+							<a
+								href="#"
+								class="no-underline text-[#f4e5e5] font-semibold hover:text-[#ffffff] text-[0.9vmax]"
+								>Comunidad</a>
+						</li>
+						<li class="ml-[10px] list-none inline-block">
+							<a
+								href="#"
+								class="no-underline text-[#f4e5e5] font-semibold hover:text-[#ffffff] text-[0.9vmax]"
+								>Acerca de</a>
+						</li>
+						<li class="ml-[10px] list-none inline-block">
+							<a
+								href="#"
+								class="no-underline text-[#f4e5e5] font-semibold hover:text-[#ffffff] text-[0.9vmax]"
+								>Soporte</a>
+						</li>
 					</menu>
 				</div>
-				<div class="float-left mt-[10px] w-[40%] text-[#f4e5e5] font-sans">
-					<a href="#" class="mt-2 no-underline text-[#f4e5e5] bg-[#789806] py-[6px] px-[12px] font-sans inline-flex items-center gap-2 hover:bg-[#8aab14]">
+				<div
+					class="float-left mt-[10px] w-[30%] text-[#f4e5e5] font-sans text-[11px]"
+				>
+					<a
+						href="#"
+						class="no-underline text-[#f4e5e5] bg-[#789806] py-[4px] px-[12px] font-sans inline-flex items-start gap-2 hover:bg-[#8aab14]"
+					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke-width="1.5"
 							stroke="currentColor"
-							class="w-[18px]"
+							class="w-[13px]"
 						>
 							<path
 								stroke-linecap="round"
@@ -49,24 +77,79 @@ const { title } = Astro.props;
 							></path>
 						</svg>Instalar Steam
 					</a>
-					<a href="3">Iniciar Sesión</a>
+					<a href="#">Iniciar Sesión</a>
 					|
-					<a href="3">Idioma</a>
+					<a href="#"
+						>Idioma <i class="fa-solid fa-caret-down"></i></a
+					>
 				</div>
 			</div>
 		</header>
-		<div class="bg-orange-500 h-[360px]">
+		<div class="h-[450px] bg-[url('https://raw.githubusercontent.com/Alexis8125/curriculum/refs/heads/develoment/img/Sin%20t%C3%ADtulo.png')] bg-cover bg-no-repeat">
+			<br>
+				<div class="container max-w-[940px] mx-auto h-[35px] bg-slate-500 flex items-center justify-center">
+					<div class="inline-block items-center h-[100%] w-[80%]">
+						<li class="list-none inline-block ml-1 mr-7 mt-1">
+							<a
+								href="#"
+								class="no-underline text-[#ffffff] font-semibold hover:text-[#ffffff] text-[13px]"
+								>Tu Tienda</a>
+						</li>
+						<li class="list-none inline-block mr-7 mt-1">
+							<a
+								href="#"
+								class="no-underline text-[#ffffff] font-semibold hover:text-[#ffffff] text-[13px]"
+								>Nuevo y Destacable</a>
+						</li>
+						<li class=" list-none inline-block mr-7 mt-1">
+							<a
+								href="#"
+								class="no-underline text-[#ffffff] font-semibold hover:text-[#ffffff] text-[13px]"
+								>Categorias</a>
+						</li>
+						<li class=" list-none inline-block mr-7 mt-1">
+							<a
+								href="#"
+								class="no-underline text-[#ffffff] font-semibold hover:text-[#ffffff] text-[13px]"
+								>Tienda de puntos</a>
+						</li>
+						<li class=" list-none inline-block mr-7 mt-1">
+							<a
+								href="#"
+								class="no-underline text-[#ffffff] font-semibold hover:text-[#ffffff] text-[13px]"
+								>Noticias</a>
+						</li>
+						<li class=" list-none inline-block mt-1">
+							<a
+								href="#"
+								class="no-underline text-[#ffffff] font-semibold hover:text-[#ffffff] text-[13px]"
+								>Laboratorios</a>
+						</li>
+					</div>
+					<div class="w-[20%] flex items-center justify-end">
+						<input type="search" name="" id="" class="mr-1 bg-slate-400 text-[#fff] hover:border-spacing-1 rounded" placeholder="buscar"><i class="fa-solid fa-magnifying-glass mr-1 bg-slate-600"></i>
+					</div>
+				</div>
+			
+			
+
+			</div>
 			<!-- Contruir el bloque de la pagina de Steam -->
 		</div>
 
-		<div class="float-left z-[1] max-w-[940px] mx-auto -left-[180px] bg-pink-500 w-[180px] h-[360px] sticky top-0"></div>
+		<div
+			class="float-left z-[1] max-w-[940px] mx-auto -left-[180px] bg-pink-500 w-[180px] h-[360px] sticky top-0"
+		>
+		</div>
 
-		<div class="container max-w-[9400px] mx-auto bg-purple-600 h-[240px] relative"></div>
+		<div
+			class="container max-w-[9400px] mx-auto bg-purple-600 h-[240px] relative"
+		>
+		</div>
 
 		<div class="h-[1200px] bg-blue-400"></div>
 		<!-- Con group puede darle estilos a uhn hijo con slectores descendentes, en este caso, que cuando este encima la animacion se efectue -->
 		<div
-		
 			class="group items-center hover:cursor-pointer duration-300 transition-colors hover:bg-blue-600 rounded py-2 px-4 text-white inline-flex bg-blue-500"
 		>
 			<svg
@@ -99,8 +182,13 @@ const { title } = Astro.props;
 					d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
 			</svg>
 		</div>
+		<script
+			src="https://kit.fontawesome.com/cc651b5ac7.js"
+			crossorigin="anonymous"></script>
 	</body>
 </html>
+<style>
+</style>
 <!-- <style>
 	/* *{
 		margin: 0;
