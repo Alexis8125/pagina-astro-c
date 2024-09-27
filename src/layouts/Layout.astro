@@ -16,31 +16,31 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="p-0 m-0">
 		<!-- <slot /> -->
-		<header>
+		<header class="h-20 bg-[#161d24]" >
 			<div class="container max-w-[9400px] mx-auto">
-				<div class="flex-menu">
+				<div class="flex items-center w-[60%] float-left h-20 text-[#f4e5e5] font-sans uppercase">
 					<img
 						src="https://store.akamai.steamstatic.com/public/shared/images/responsive/header_logo.png"
-						alt="Logo Steam"
+						alt="Logo Steam" class="w-40"
 					/>
 					<menu>
-						<li><a href="#">Tienda</a></li>
-						<li><a href="#">Comunidad</a></li>
-						<li><a href="#">Acerca de</a></li>
-						<li><a href="#">Soporte</a></li>
+						<li class="ml-[10px] list-none inline-block"><a href="#" class="no-underline text-[#f4e5e5] font-semibold hover:text-[#ffffff]">Tienda</a></li>
+						<li class="ml-[10px] list-none inline-block"><a href="#" class="no-underline text-[#f4e5e5] font-semibold hover:text-[#ffffff]">Comunidad</a></li>
+						<li class="ml-[10px] list-none inline-block"><a href="#" class="no-underline text-[#f4e5e5] font-semibold hover:text-[#ffffff]">Acerca de</a></li>
+						<li class="ml-[10px] list-none inline-block"><a href="#" class="no-underline text-[#f4e5e5] font-semibold hover:text-[#ffffff]">Soporte</a></li>
 					</menu>
 				</div>
-				<div class="menu-right">
-					<a href="#" class="btn-download">
+				<div class="float-left mt-[10px] w-[40%] text-[#f4e5e5] font-sans">
+					<a href="#" class="mt-2 no-underline text-[#f4e5e5] bg-[#789806] py-[6px] px-[12px] font-sans inline-flex items-center gap-2 hover:bg-[#8aab14]">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke-width="1.5"
 							stroke="currentColor"
-							class="size-6"
+							class="w-[18px]"
 						>
 							<path
 								stroke-linecap="round"
@@ -55,15 +55,15 @@ const { title } = Astro.props;
 				</div>
 			</div>
 		</header>
-		<div class="banner">
+		<div class="bg-orange-500 h-[360px]">
 			<!-- Contruir el bloque de la pagina de Steam -->
 		</div>
 
-		<div class="left-menu"></div>
+		<div class="float-left z-[1] max-w-[940px] mx-auto -left-[180px] bg-pink-500 w-[180px] h-[360px] sticky top-0"></div>
 
-		<div class="banner2 container max-w-[9400px] mx-auto"></div>
+		<div class="container max-w-[9400px] mx-auto bg-purple-600 h-[240px] relative"></div>
 
-		<div class="banner3"></div>
+		<div class="h-[1200px] bg-blue-400"></div>
 		<!-- Con group puede darle estilos a uhn hijo con slectores descendentes, en este caso, que cuando este encima la animacion se efectue -->
 		<div
 		
@@ -101,7 +101,7 @@ const { title } = Astro.props;
 		</div>
 	</body>
 </html>
-<style>
+<!-- <style>
 	/* *{
 		margin: 0;
 		padding: 0;
@@ -216,4 +216,4 @@ const { title } = Astro.props;
 		height: 1200px;
 		background-color: turquoise;
 	}
-</style>
+</style> -->
